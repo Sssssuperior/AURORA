@@ -21,6 +21,15 @@ pip install -r requirements.txt
 ## Data Preparation
 For training, we provide SFT data generated using Qwen-OMNI-7B in Stage1 [[baidu](https://pan.baidu.com/s/1sX_uo8nySPsPrIY7kyozSQ?pwd=6wrg),PIN:6wrg], as well as data modified with Gemini in Stage2 [[baidu](https://pan.baidu.com/s/1jU34YONEngdDELSE4PalBA?pwd=p37y),PIN:p37y]. We encourage readers to use even stronger models to generate even better data.
 
+### Model Files
+The `model` folder contains three Python files, each corresponding to a specific stage of the training and evaluation pipeline:
+- **`LISA_ref.py`**  
+  Used in **Stage 1 (SFT training)**.
+- **`LISA_grpo.py`**  
+  Used in the **GRPO reinforcement learning stage**.
+- **`LISA.py`**  
+  Used for **inference/testing**.
+
 ## Start Training
 For training, please run the following scripts and change the visible device according to yourself.
 ```
@@ -31,11 +40,12 @@ For testing,
 deepspeed --num_gpus=2 train_ds_test.py
 ```
 
-We also provide the checkpoint in [[baidu](),PIN]:. **Due to the limited storage capacity of my Google Drive, I am unable to upload additional files there. If you can only access the data via Google Drive and are unable to use Baidu Cloud, please contact me by email. (ziyangluo1110@gmail.com).**
+We also provide the checkpoint in [[baidu](),PIN]:. 
+
+**Due to the limited storage capacity of my Google Drive, I am unable to upload additional files there. If you can only access the data via Google Drive and are unable to use Baidu Cloud, please contact me by email. (ziyangluo1110@gmail.com).**
 
 ## Citation
-If you use AURORA in your research or wish to refer to the baseline results, please use the following BibTeX entry.
-If you have any questions, please contact me: ziyangluo1110@gmail.com
+If you use AURORA in your research or wish to refer to the baseline results, please use the following BibTeX entry. If you have any questions, please contact me: ziyangluo1110@gmail.com
 ```
 @article{luo2025aurora,
   title={AURORA: Augmented Understanding via Structured Reasoning and Reinforcement Learning for Reference Audio-Visual Segmentation},
