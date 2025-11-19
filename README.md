@@ -40,7 +40,7 @@ For testing,
 deepspeed --num_gpus=2 train_ds_test.py
 ```
 
-We also provide the checkpoint in [[baidu](),PIN]:. 
+We also provide the checkpoint in [[baidu](),PIN] (**❗Due to the large size of the pth models (around 30 GB), uploading them will take some time. I will upload them to Baidu Cloud within this week❗**). 
 
 **Due to the limited storage capacity of my Google Drive, I am unable to upload additional files there. If you can only access the data via Google Drive and are unable to use Baidu Cloud, please contact me by email. (ziyangluo1110@gmail.com).**
 
